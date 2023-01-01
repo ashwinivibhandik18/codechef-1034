@@ -1,0 +1,22 @@
+#codechef problem no 1034
+
+t=int(input())
+lst=[]
+ls=[]
+for i in range(t):
+    x,y,z=map(int,input().split())
+    ls.append(x)
+    ls.append(y)
+    ls.append(z)
+    a=max(x,y,z)
+    if ls.count(a)==1:
+        if a==x:
+            lst.append("A")
+        elif a==y:
+            lst.append("B")
+        elif a==z:
+            lst.append("C")
+    else:
+        lst.append("NOTA")
+for i in lst:
+    print(i)
